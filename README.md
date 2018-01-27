@@ -14,7 +14,7 @@ be teaching how to use those.
 
 ![](./img/eth_logo.png)
 
-<span class="figcaption_hack">Vitalik Buterin’s brainchild (credits to Ethereum Foundation)</span>
+<sup>_Vitalik Buterin’s brainchild (credits to Ethereum Foundation)_</sup>
 
 Before we start, here is a quick background on Ethereum.
 
@@ -75,7 +75,7 @@ costs.
 
 ![](./img/ss1.png)
 
-<span class="figcaption_hack">My configuration — yours should look similar</span>
+<sup>_My configuration — yours should look similar_</sup>
 
 The next screen should show something like this (I named my instance bc1, hence
 the prefix). **Important: **set up a static IP for your instance. Open *‘Public
@@ -98,7 +98,8 @@ Select your VM and click on ‘*Connect’* on the toolbar. It should download a
 .rdp file. This assumes you chose Windows for your VM instance.
 
 ![](./img/ss2.png)
-<span class="figcaption_hack">See the ‘Connect’ button on the toolbar? Click on it.</span>
+
+<sup>_See the ‘Connect’ button on the toolbar? Click on it._</sup>
 
 For Windows users: simply double click on the .rdp file and enter your VM
 credentials to connect to your VM when prompted.
@@ -138,7 +139,8 @@ applies to other operating systems. Open up the terminal and enter `geth help` .
 You should have a similar output on the terminal.
 
 ![](./img/ss3.png)
-<span class="figcaption_hack">You should get something like this. Tons of text and blabblery.</span>
+
+<sup>_You should get something like this. Tons of text and blabblery._</sup>
 
 #### Step 4: Initializing your Ethereum chain
 
@@ -236,14 +238,14 @@ When you are done, you should see something similar on your screen:
 
 ![](./img/ss4.png)
 
-<span class="figcaption_hack">Congrats! You just created your first Ethereum blockchain. Now to connect to it…</span>
+<sup>_Congrats! You just created your first Ethereum blockchain. Now to connect to it…_</sup>
 
 Also, your folder should now contain these things:
 
 ![](./img/ss5.png)
 
-<span class="figcaption_hack">Note the .json and the JSON File in the Types column — make sure your filetypes
-are correct!</span>
+<sup>_Note the .json and the JSON File in the Types column — make sure your filetypes
+are correct!_</sup>
 
 When you’re done with your first node, go back and repeat the whole step for all
 of your nodes that you plan to use.
@@ -267,8 +269,8 @@ random number so that you do not connect to someone elses’ chain.*
 
 ![](./img/ss6.png)
 
-<span class="figcaption_hack">You should be able to see something like this if everything goes correctly. This
-is what you call a daemon — a background process</span>
+<sup>_You should be able to see something like this if everything goes correctly. This
+is what you call a daemon — a background process_</sup>
 
 Do not kill this process or close the terminal — your computer is now running
 the process for running the Ethereum blockchain. Do not repeat this step on
@@ -283,21 +285,21 @@ Your terminal should look similar:
 
 ![](./img/ss7.png)
 
-<span class="figcaption_hack">Running both ipconfig and geth attach.</span>
+<sup>_Running both ipconfig and geth attach._</sup>
 
 You should get the green output, something that looks like an URL address. Then,
 paste the green output between `[ ]` in `static-nodes.json` like so:
 
 ![](./img/ss8.png)
 
-<span class="figcaption_hack">Watch the selected text</span>
+<sup>_Watch the selected text_</sup>
 
 and replace the selected `[::]` between the `@` and `:30303` with your IP
 address like so:
 
 ![](./img/ss9.png)
 
-<span class="figcaption_hack">It became 10.0.0.4 for me</span>
+<sup>_It became 10.0.0.4 for me_</sup>
 
 Copy and paste the same enode URL into your other nodes’ `static-nodes.json`
 file.
@@ -321,7 +323,7 @@ have set up your own blockchain and have connected at least 2 nodes together!
 By now, you should have 2 terminal windows looking like this:
 
 ![](./img/ss10.png)
-<span class="figcaption_hack">Both terminals should look similar</span>
+<sup>_Both terminals should look similar_</sup>
 
 That was quite a lot to do in a single step, but next one will be the most fun.
 
@@ -338,7 +340,7 @@ work, or it might sync the actual Ethereum blockchain.*
 
 ![](./img/ss11.png)
 
-<span class="figcaption_hack">Sweet.</span>
+<sup>_Sweet._</sup>
 
 Click *LAUNCH APPLICATION* and you should be greeted by the Ethereum Wallet
 GUI’s main screen. Now, you will need an account on the Ethereum testnet. Go
@@ -349,7 +351,7 @@ forget it, for convenience’s sake.
 
 ![](./img/ss12.png)
 
-<span class="figcaption_hack">Doubly sweet.</span>
+<sup>_Doubly sweet._</sup>
 
 Note the long random string of letters and numbers below *MAIN ACCOUNT
 (ETHERBASE). *That will be the address for this account and wallet. Now that you
@@ -361,7 +363,7 @@ for mining. *The more the merrier.*
 
 ![](./img/ss13.png)
 
-<span class="figcaption_hack">Look ma, I’m getting rich!!!</span>
+<sup>_Look ma, I’m getting rich!!!_</sup>
 
 On your other terminal, you should have something that says `Generating DAG in
 progress` . Let it complete, then it will begin mining. Watch as your Ethereum
@@ -390,7 +392,7 @@ have just sent.
 
 ![](./img/ss14.png)
 
-<span class="figcaption_hack">I’m rich!!!</span>
+<sup>_I’m rich!!!_</sup>
 
 *****
 
