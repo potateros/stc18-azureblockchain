@@ -24,9 +24,9 @@ features are very important, because they allow *anyone* to build on top of
 Ethereum, create *smart contracts* that will run on the Ethereum blockchain, and
 allow anyone to create their own Ethereum-based blockchain.
 
-However, it is most popularly known as a **cryptocurrency. **One** **common
+However, it is most popularly known as a _**cryptocurrency.**_ One common
 misconception is that Ethereum is the *cryptocurrency*, but that part of
-Ethereum has an actual name: **Ether. **Ethereum also uses ‘**Gas**’ for pricing
+Ethereum has an actual name: _**Ether.**_ Ethereum also uses ‘_**Gas**_’ for pricing
 transactions within the Ethereum blockchain, unlike Bitcoin, which uses Bitcoins
 for transactional costs.
 [Here](https://medium.com/startup-grind/gentle-intro-to-blockchain-and-smart-contracts-part-1-3328afca62ab)
@@ -56,7 +56,7 @@ familiar with it. You can use other platforms as well. I have tested using
 Ubuntu on Azure, Windows and Ubuntu on GCP (Google Cloud Platform), and it
 works. The steps will be different, but the settings should be similar.
 
-Open up *Virtual Machines*** **on the left panel of the [Microsoft
+Open up *Virtual Machines* on the left panel of the [Microsoft
 Azure](https://portal.azure.com/) dashboard and click on ‘*Add*’ on the toolbar.
 Search for ‘*Windows 10*’ and choose ‘*Windows 10 Pro*’.
 
@@ -78,16 +78,14 @@ costs.
 <sup>_My configuration — yours should look similar_</sup>
 
 The next screen should show something like this (I named my instance bc1, hence
-the prefix). **Important: **set up a static IP for your instance. Open *‘Public
-IP Address’ *and create a new public IP address. Use the default name for the
-public IP address. Select *‘Static’ *for Assignment. Then choose ‘*None’ *for
-*Network security group (firewall). ***Make sure you set the static IP and
-remove the firewall, or else your VM will not work for this tutorial. **Leave
+the prefix). **Important:** set up a static IP for your instance. Open *‘Public
+IP Address’* and create a new public IP address. Use the default name for the
+public IP address. Select *‘Static’* for Assignment. Then choose *‘None’* for
+Network security group (firewall). _**Make sure you set the static IP and remove the firewall, or else your VM will not work for this tutorial.**_ Leave
 everything else as it is, unless you know what you are doing.
 
-Click ‘*Ok’, *accept the Terms of use and create your instance. By then, you
-should have a tile appear on your Dashboard that says *‘Deploying Windows 10
-Pro, Version 1709’* (for my case, it is version 1709, but yours might be
+Click *‘Ok’*, accept the Terms of use and create your instance. By then, you
+should have a tile appear on your Dashboard that says *‘Deploying Windows 10 Pro, Version 1709’* (for my case, it is version 1709, but yours might be
 different. It does not matter). Repeat the steps to create a second instance, up
 to as many as you want. It should take a while to deploy, so grab a cup of
 coffee or have a stretch while you wait.
@@ -109,7 +107,7 @@ to connect to your VM. Open the .rdp file in a text editor, and copy the IP
 address that is after `full address:s:` Mine, for example was `52.170.7.80:3389`
 Then, open Remmina and make a new connection. Give your connection a name, then
 paste the IP address into the *‘Server’* field. Enter your VM’s username and
-password, then click *‘Connect’. *You should be able to connect to your VM now.
+password, then click *‘Connect’.* You should be able to connect to your VM now.
 (optional: you can change the color depth if you have a fast connection for
 better quality visuals)
 
@@ -126,7 +124,7 @@ Open up
 [https://geth.ethereum.org/downloads](https://geth.ethereum.org/downloads) in
 your virtual machine and download the latest **stable** version for the
 operating system you have chosen. For Windows users, there is no need to check
-‘*Development Tools’ *when installing, but it is up to you. When it is done
+*‘Development Tools’* when installing, but it is up to you. When it is done
 installing, do the same on your second (and third, and fourth, if you decided to
 use that many nodes)
 
@@ -161,16 +159,14 @@ save them elsewhere. I will do that for my nodes, calling them `ethnet` and
 
 If you cannot see your file extensions (the `.json` and `.mp3` and `.jpg` part
 of the filename), then you have to show it in Windows. Do so by going to View >
-Options > View, then scroll down the *Advanced Settings* until you see *Hide
-extensions for known file types. *Uncheck it and click OK.
+Options > View, then scroll down the *Advanced Settings* until you see *Hide extensions for known file types.* Uncheck it and click OK.
 
 A bit of blockchain trivia: genesis refers to the very first block in a
 blockchain. The genesis block of Bitcoin contains the following text in
 hexadecimal: `The Times 03/Jan/2009 Chancellor on brink of second bailout for
 banks` as a testament to Satoshi Nakamoto’s vision of Bitcoin.
 
-Anywhoo, open up `genesis.json` with a code editor (**Do not use Windows
-Notepad) **such as [Notepad++](https://notepad-plus-plus.org/) for Windows,
+Anywhoo, open up `genesis.json` with a code editor **(Do not use Windows Notepad)** such as [Notepad++](https://notepad-plus-plus.org/) for Windows,
 [Sublime Text](https://www.sublimetext.com/) for Windows, Linux, and macOS, or
 my personal favorite, [Visual Studio Code](https://code.visualstudio.com/), also
 for all three platforms. If you’re a terminal-ninja, go ahead and use nano, vim,
@@ -199,7 +195,7 @@ square brackets)
 
 Now, some explanation for these two files.
 
-**Blockchain**, as the name suggests, consists of a *chain of blocks*. For it to
+_**Blockchain**_, as the name suggests, consists of a *chain of blocks*. For it to
 work, we need to have the first and initial block from which all future blocks
 will derive from. There is a special name for this block, and it’s called the
 *genesis block.* This is where `genesis.json` comes in. It defines the initial
@@ -209,7 +205,7 @@ Foundation’s documentation on their official website. There are different ways
 to initialize your blockchain, and this is the way we are going to do it because
 it is simpler.
 
-Ethereum is also known as a *decentralized peer-to-peer *network. What this
+Ethereum is also known as a *decentralized peer-to-peer* network. What this
 means is that all participants on the network (nodes) are directly connected to
 each other on the network. If that is the case, another question arises: which
 computer should a new node connect to first? This is where `static-nodes.json`
@@ -353,8 +349,7 @@ forget it, for convenience’s sake.
 
 <sup>_Doubly sweet._</sup>
 
-Note the long random string of letters and numbers below *MAIN ACCOUNT
-(ETHERBASE). *That will be the address for this account and wallet. Now that you
+Note the long random string of letters and numbers below *MAIN ACCOUNT (ETHERBASE).* That will be the address for this account and wallet. Now that you
 have a wallet, you will need some sweet sweet **Ether** to fill it up with. To
 start mining, open up your Geth interactive console that you should have opened
 before. Enter `miner.start(4)` to start mining. The number between the bracket
